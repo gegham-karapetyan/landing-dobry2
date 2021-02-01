@@ -124,7 +124,7 @@ function sliderTrackFruitsTranslate() {
 //-----</ swiper slideChange event listeners >---------------
 
 function toggleSlideChanges() {
-  if (window.scrollY > 10) swiper.allowTouchMove = false;
+  if (window.scrollY > 30) swiper.allowTouchMove = false;
   else swiper.allowTouchMove = true;
 }
 
