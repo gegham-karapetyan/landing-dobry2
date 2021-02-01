@@ -1,9 +1,9 @@
 let swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   hashNavigation: true,
-  // history: {
-  //   replaceState: true,
-  // },
+  history: {
+   replaceState: true,
+  },
   parallax: true,
 });
 
