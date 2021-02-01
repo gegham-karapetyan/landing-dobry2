@@ -1,0 +1,99 @@
+form {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  & input,
+  & textarea {
+    position: absolute;
+    width: 90%;
+    bottom: 13px;
+    left: 5%;
+    z-index: 10;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+  }
+  & textarea {
+    height: 75px;
+  }
+  & input:focus,
+  & textarea:focus {
+    outline: none;
+  }
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form--first {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+.form--second {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mail-input__bg,
+.name-input__bg,
+.phone-input__bg {
+  width: 100%;
+  height: 42px;
+}
+
+.textarea__bg {
+  width: 100%;
+  height: 95px;
+}
+
+.form__uname,
+.form__mail,
+.form__phone,
+.form__note {
+  position: relative;
+}
+.form__uname {
+  margin-top: 40px;
+}
+.form__mail {
+  margin-top: 20px;
+}
+.form__phone {
+  margin-top: 20px;
+}
+.form__note {
+  margin-top: 10px;
+}
+.form__btns {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  &--first {
+    margin-top: 45px;
+    justify-content: center;
+  }
+  &--second {
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+}
+.form__prev-btn {
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+form .slider-track--translate {
+  transform: translate3d(-100%, 0, 0);
+}

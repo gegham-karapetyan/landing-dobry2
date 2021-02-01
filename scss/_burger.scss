@@ -1,0 +1,32 @@
+.burger {
+  outline: none;
+  cursor: pointer;
+  transition-delay: 1.1s;
+  transition: transform 0.7s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+}
+.burger > img {
+  display: block;
+  transition: transform 1.1s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+}
+
+.burger__vector2 {
+  margin: 3px 0;
+}
+
+.burger--active {
+  transform: rotate(180deg);
+  & > .burger__vector1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+  & > .burger__vector2 {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  & > .burger__vector3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
+.burger--rotate {
+  transition-delay: 0s;
+  transform: rotate(360deg);
+}

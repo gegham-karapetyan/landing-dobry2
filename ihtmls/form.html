@@ -1,0 +1,77 @@
+<form action="action" method="POST" id="form">
+  <div class="slider-track">
+    <div class="slider-slide">
+      <div class="form form--first">
+        <div class="form__uname">
+          <label for="uname">Անուն Ազգանուն*</label>
+          <input
+            id="uname"
+            type="text"
+            class="feedback__uname"
+            autocomplete="off"
+            name="uname"
+            tabindex="-1"
+            required
+          />
+          <svg class="name-input__bg">
+            <use xlink:href="#name-input-bg"></use>
+          </svg>
+        </div>
+        <div class="form__mail">
+          <label for="mail">էլ․ հասցե*</label>
+          <input
+            id="mail"
+            type="text"
+            class="feedback__mail"
+            name="mail"
+            autocomplete="off"
+            required
+          />
+          <svg class="mail-input__bg">
+            <use xlink:href="#mail-input-bg"></use>
+          </svg>
+        </div>
+
+        <div class="form__btns form__btns--first">
+          <button type="button" class="form__next-btn">
+            <img src="./images/next-btn.svg" alt="next-btn" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-slide">
+      <div class="form form--second">
+        <div class="form__phone">
+          <label for="phone">Հեռախոսահամար*</label>
+          <input
+            id="phone"
+            type="tel"
+            autocomplete="off"
+            name="phone"
+            required
+          />
+          <svg class="phone-input__bg">
+            <use xlink:href="#name-input-bg"></use>
+          </svg>
+        </div>
+        <div class="form__note">
+          <label for="note">Նշում</label>
+          <textarea name="note" id="note" cols="10" rows="10"> </textarea>
+          <svg class="textarea__bg">
+            <use xlink:href="#textarea-bg"></use>
+          </svg>
+        </div>
+
+        <div class="form__btns form__btns--second">
+          <button type="button" class="form__prev-btn">
+            <img src="./images/next-sign.svg" alt="next-sign" />
+          </button>
+
+          <button type="submit" class="feedback__submit">
+            <img src="./images/submit-btn.svg" alt="submit-btn" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,36 @@
+@import "./fonts";
+@import "./_normalize.scss";
+@import "./variables.scss";
+@import "./_global.scss";
+@import "./_header.scss";
+@import "./_inner-slider.scss";
+@import "./_menu-page.scss";
+@import "./_about-us.scss";
+@import "./_home-page.scss";
+@import "./_content.scss";
+@import "./_feedback.scss";
+@import "./_form.scss";
+@import "./_return-btn.scss";
+
+.damper {
+  flex: 5%;
+}
+.prevent-scrolling {
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    white 8%,
+    rgb(87, 103, 105) 32%
+  );
+}

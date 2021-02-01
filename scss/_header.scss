@@ -1,0 +1,48 @@
+@import "./_burger.scss";
+
+.header {
+  width: 100%;
+  transition: all 0.3s;
+  position: absolute;
+  z-index: 15;
+
+  &__inner {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & img {
+      width: 100%;
+    }
+  }
+  &__border {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    visibility: hidden;
+  }
+}
+.header--sticky > .header__inner {
+  margin-top: 19px;
+}
+.header--sticky > .header__inner > .logo {
+  width: 90px;
+}
+.header--sticky > .header__border {
+  visibility: visible;
+}
+.header--apple {
+  background: #56bb7f;
+}
+.header--tomato {
+  background: #f39070;
+}
+.header--appleCitrus {
+  background: #f29768;
+}
+.header--multiMix {
+  background: #f1bb23;
+}

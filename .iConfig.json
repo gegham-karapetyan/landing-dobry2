@@ -1,0 +1,4 @@
+{
+  "src": "ihtmls/main.html",
+  "dist": "public/index.html"
+}

@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dobry</title>
+  </head>
+
+  <body>
+    <svg display="none">
+  <symbol
+    id="mail-input-bg"
+    width="100%"
+    preserveAspectRatio="none"
+    height="41"
+    viewBox="0 0 288 41"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.7704 39.0671C-0.429443 26.1289 0.125067 13.4254 3.43279 0.712287C96.7348 -0.101865 191.579 1.76548 283.362 3.39924C289.498 7.28601 289.004 33.4237 282.614 41.0181C190.532 41.0952 95.3861 39.9617 1.7704 39.0671Z"
+      fill="white"
+    />
+  </symbol>
+  <symbol
+    id="name-input-bg"
+    width="100%"
+    preserveAspectRatio="none"
+    height="41"
+    viewBox="0 0 288 41"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M286.283 1.88055C288.545 14.8105 288.051 27.516 284.804 40.2411C191.506 41.3986 96.6544 39.8802 4.8639 38.5841C-1.2905 34.72 -0.921023 8.58071 5.43283 0.962865C97.5133 0.546972 192.664 1.3304 286.283 1.88055Z"
+      fill="white"
+    />
+  </symbol>
+
+  <symbol
+    id="content-bg"
+    width="325"
+    height="491"
+    viewBox="0 0 325 491"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M320.89 2.50176C322.351 5.90082 323.186 8.5001 323.708 11.9991C324.229 15.5982 325.39 527.606 324.868 531.305C324.451 534.904 322.468 537.803 321.008 541.302C316.625 541.702 312.66 542.802 308.174 543.102C303.792 543.401 299.409 543.701 294.923 543.901C290.54 544.101 286.054 544.101 281.671 544.201C277.289 544.301 272.803 543.901 268.42 543.901C264.038 543.901 47.5251 549 43.1428 549C38.6562 549 34.2739 548.7 29.8916 548.6C25.405 548.5 21.0227 547.6 16.6404 547.5C12.1538 547.4 7.66721 547.4 3.28494 547.201C0.989456 546.201 1.51115 541.602 0.885112 536.603C0.572092 533.204 -0.366961 529.605 0.154739 525.906C0.676439 521.408 2.22897 10.8994 4.10709 8.89995C8.48937 8.60003 12.0369 5.30094 16.5235 5.101C20.9058 4.90105 25.3924 6.00075 29.8791 5.8008C34.2613 5.60086 38.6436 3.40145 43.1302 3.30148C259.539 -0.397448 264.025 0.902199 268.512 0.902199C272.894 0.802226 277.381 2.60173 281.867 2.50176C286.354 2.50176 290.736 2.90165 295.118 2.90165C299.605 2.90165 303.987 -0.0975276 308.474 0.0024449C312.856 0.0024449 316.508 2.40178 320.89 2.50176Z"
+    />
+  </symbol>
+  <symbol
+    id="textarea-bg"
+    height="95"
+    preserveAspectRatio="none"
+    viewBox="0 0 288 95"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M285.911 1.19658C288.052 32.6537 289.275 61.7368 285.911 92.6004C192.639 93.7874 96.0033 97.3486 4.26056 92.6004C-1.85563 83.1039 -1.24401 19.5961 5.17799 1.19663C97.2266 1.79016 192.333 -1.77107 285.911 1.19658Z"
+      fill="white"
+    />
+  </symbol>
+</svg>
+
+    <div style="display: none">
+      <form action="action" method="POST" id="form">
+  <div class="slider-track">
+    <div class="slider-slide">
+      <div class="form form--first">
+        <div class="form__uname">
+          <label for="uname">Անուն Ազգանուն*</label>
+          <input
+            id="uname"
+            type="text"
+            class="feedback__uname"
+            autocomplete="off"
+            name="uname"
+            tabindex="-1"
+            required
+          />
+          <svg class="name-input__bg">
+            <use xlink:href="#name-input-bg"></use>
+          </svg>
+        </div>
+        <div class="form__mail">
+          <label for="mail">էլ․ հասցե*</label>
+          <input
+            id="mail"
+            type="text"
+            class="feedback__mail"
+            name="mail"
+            autocomplete="off"
+            required
+          />
+          <svg class="mail-input__bg">
+            <use xlink:href="#mail-input-bg"></use>
+          </svg>
+        </div>
+
+        <div class="form__btns form__btns--first">
+          <button type="button" class="form__next-btn">
+            <img src="./images/next-btn.svg" alt="next-btn" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="slider-slide">
+      <div class="form form--second">
+        <div class="form__phone">
+          <label for="phone">Հեռախոսահամար*</label>
+          <input
+            id="phone"
+            type="tel"
+            autocomplete="off"
+            name="phone"
+            required
+          />
+          <svg class="phone-input__bg">
+            <use xlink:href="#name-input-bg"></use>
+          </svg>
+        </div>
+        <div class="form__note">
+          <label for="note">Նշում</label>
+          <textarea name="note" id="note" cols="10" rows="10"> </textarea>
+          <svg class="textarea__bg">
+            <use xlink:href="#textarea-bg"></use>
+          </svg>
+        </div>
+
+        <div class="form__btns form__btns--second">
+          <button type="button" class="form__prev-btn">
+            <img src="./images/next-sign.svg" alt="next-sign" />
+          </button>
+
+          <button type="submit" class="feedback__submit">
+            <img src="./images/submit-btn.svg" alt="submit-btn" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+    </div>
+    <div class="menu-page">
+  <div class="menu-page__wrapper">
+    <div class="opening-parts">
+      <div class="menu-page__part-top">
+        <div>
+          <button id="aboutUs">
+            <img src="./images/about-us.svg" alt="about-us" />
+          </button>
+        </div>
+      </div>
+      <div class="menu-page__part-bottom">
+        <div>
+          <button id="feedback">
+            <img src="./images/feedback.svg" alt="feedback" />
+          </button>
+        </div>
+
+        <div class="menu-page__social-contacts">
+          <a href="https://youtube.com"
+            ><img src="images/youtube-icon.svg" alt="youtube-icon"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="images/facebook-icon.svg" alt="facebook-icon"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="images/instagram-icon.svg" alt="instagram-icon"
+          /></a>
+        </div>
+        <div class="menu-page__ordinary-contacts">
+          <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+          <br />
+          <a href="mailto:https://mail@dobry.am">mail@dobry.am</a>
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+  <div class="first-part">
+    <div class="bottles">
+      <img src="./images/bottles.png" alt="bottles" />
+    </div>
+    <div class="left-part"></div>
+    <div class="right-part">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="second-part">
+    <div class="container">
+      <img src="./images/about-us2.svg" alt="about-us" />
+      <p>
+        «Դոբրի»-ն ներկայացնում է 100% բնական հյութերի նոր տեսականի:
+        Յուրաքանչյուր տուփում միայն 100%-անոց հյութեր են, որոնք պահպանել են
+        հասած մրգերի, բանջարեղենի և հատապտուղների բոլոր օգտակար հատկությունները:
+        Եվ ոչ մի գրամ հավելյալ շաքար:
+      </p>
+    </div>
+  </div>
+</div>
+
+    <div class="feedback-page">
+      <div class="damper"></div>
+<div class="feedback__text">
+  <img src="images/feedback2.svg" alt="feddback-text" />
+</div>
+<!-- will be dinamicly added -->
+<div class="form-container"></div>
+
+<div class="container">
+  <div class="contacts-feedback">
+    <div class="social">
+      <a href="https://facebook.com"
+        ><img src="images/facebook-icon.svg" alt="facebook-icon"
+      /></a>
+      <a href="https://youtube.com"
+        ><img src="images/youtube-icon.svg" alt="youtube-icon"
+      /></a>
+      <a href="https://instagram.com"
+        ><img src="images/instagram-icon.svg" alt="instagram-icon"
+      /></a>
+    </div>
+    <div>
+      <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+      <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="container">
+    <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__inner">
+    <div class="logo">
+      <a href="index.html" class="logo__link">
+        <img src="images/logo.svg" alt="dobry-logo" />
+      </a>
+    </div>
+    <nav>
+      <button type="button" class="burger" tabindex="0">
+        <img
+          class="burger__vector1"
+          src="images/menu-vector1.svg"
+          alt="burger-vector1"
+        />
+        <img
+          class="burger__vector2"
+          src="images/menu-vector2.svg"
+          alt="burger-vector2"
+        />
+        <img
+          class="burger__vector3"
+          src="images/menu-vector3.svg"
+          alt="burger-vector3"
+        />
+      </button>
+    </nav>
+  </div>
+
+  <img
+    class="header__border"
+    src="images/header-border.svg"
+    alt="header-border"
+  />
+</header>
+
+
+      <div class="swiper-container">
+        <div class="parallax-bg" data-swiper-parallax="-30%"></div>
+        <div class="swiper-wrapper">
+          <div
+  class="swiper-slide swiper-slide--apple"
+  data-hash="apple"
+  data-history="apple"
+>
+  <div class="home-page home-page--apple">
+  <div class="juice">
+    <div class="play-btn" data-swiper-parallax="-50">
+      <img src="images/play-button.svg" alt="" />
+    </div>
+    <div class="juice__name juice__name-apple" data-swiper-parallax="-150">
+      <img
+        class="apple-text"
+        src="images/apple-text.svg"
+        alt="apple-text"
+        width="100%"
+      />
+    </div>
+    <div class="juice__bottle juice__bottle-apple" data-swiper-parallax="-100">
+      <img
+        class="apple-cardboard-bottle"
+        src="images/apple-cardboard-bottle.png"
+        alt="apple-cardboard-bottle"
+        width="100%"
+      />
+    </div>
+
+    <div class="juice__chunk1 juice__chunk1-apple">
+      <img
+        class="apple-chunk1"
+        src="images/apple-chunk1.png"
+        alt="apple-chunk1"
+      />
+    </div>
+    <div class="juice__chunk2 juice__chunk2-apple">
+      <img
+        class="apple-chunk2"
+        src="images/apple-chunk2.png"
+        alt="apple-chunk2"
+      />
+    </div>
+    <div class="juice__chunk3 juice__chunk3-apple">
+      <img
+        class="apple-chunk3"
+        src="images/apple-chunk3.png"
+        alt="apple-chunk3"
+      />
+    </div>
+    <div class="juice__chunk4 juice__chunk4-apple">
+      <img
+        class="apple-chunk4"
+        src="images/apple-chunk4.png"
+        alt="apple-chunk4"
+      />
+    </div>
+    <div class="bottom-sign">
+      <img src="images/bottom-sign.svg" alt="bottom-sign" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+          <div
+  class="swiper-slide swiper-slide--tomato"
+  data-hash="tomato"
+  data-history="tomato"
+>
+  <div class="home-page home-page--tomato">
+  <div class="juice">
+    <div class="play-btn" data-swiper-parallax="-50">
+      <img src="images/play-button.svg" alt="" />
+    </div>
+    <div class="juice__name juice__name-tomato" data-swiper-parallax="-150">
+      <img
+        class="tomato-text"
+        src="images/tomato-text.svg"
+        alt="tomato-text"
+        width="100%"
+      />
+    </div>
+    <div class="juice__bottle juice__bottle-tomato" data-swiper-parallax="-100">
+      <img
+        class="tomato-cardboard-bottle"
+        src="images/tomato-cardboard-bottle.png"
+        alt="tomato-cardboard-bottle"
+        width="100%"
+      />
+    </div>
+
+    <div class="juice__chunk1 juice__chunk1-tomato">
+      <img
+        class="tomato-chunk1"
+        src="images/tomato-chunk1.png"
+        alt="tomato-chunk1"
+      />
+    </div>
+    <div class="juice__chunk2 juice__chunk2-tomato">
+      <img
+        class="tomato-chunk2"
+        src="images/tomato-chunk2.png"
+        alt="tomato-chunk2"
+      />
+    </div>
+    <div class="juice__chunk3 juice__chunk3-tomato">
+      <img
+        class="tomato-chunk3"
+        src="images/tomato-chunk3.png"
+        alt="tomato-chunk3"
+      />
+    </div>
+    <div class="juice__chunk4 juice__chunk4-tomato">
+      <img
+        class="tomato-chunk4"
+        src="images/tomato-chunk4.png"
+        alt="tomato-chunk4"
+      />
+    </div>
+    <div class="bottom-sign">
+      <img src="images/bottom-sign.svg" alt="bottom-sign" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+          <div
+  class="swiper-slide swiper-slide--appleCitrus"
+  data-hash="appleCitrus"
+  data-history="appleCitrus"
+>
+  <div class="home-page home-page--appleCitrus">
+  <div class="juice">
+    <div class="play-btn" data-swiper-parallax="-50">
+      <img src="images/play-button.svg" alt="" />
+    </div>
+    <div
+      class="juice__name juice__name-appleCitrus"
+      data-swiper-parallax="-150"
+    >
+      <img
+        class="appleCitrus-text"
+        src="images/appleCitrus-text.svg"
+        alt="appleCitrus-text"
+        width="100%"
+      />
+    </div>
+    <div
+      class="juice__bottle juice__bottle-appleCitrus"
+      data-swiper-parallax="-100"
+    >
+      <img
+        class="appleCitrus-cardboard-bottle"
+        src="images/appleCitrus-cardboard-bottle.png"
+        alt="appleCitrus-cardboard-bottle"
+        width="100%"
+      />
+    </div>
+
+    <div class="juice__chunk1 juice__chunk1-appleCitrus">
+      <img
+        class="appleCitrus-chunk1"
+        src="images/appleCitrus-chunk1.png"
+        alt="appleCitrus-chunk1"
+      />
+    </div>
+    <div class="juice__chunk2 juice__chunk2-appleCitrus">
+      <img
+        class="appleCitrus-chunk2"
+        src="images/appleCitrus-chunk2.png"
+        alt="appleCitrus-chunk2"
+      />
+    </div>
+    <div class="juice__chunk3 juice__chunk3-appleCitrus">
+      <img
+        class="appleCitrus-chunk3"
+        src="images/appleCitrus-chunk3.png"
+        alt="appleCitrus-chunk3"
+      />
+    </div>
+    <div class="juice__chunk4 juice__chunk4-appleCitrus">
+      <img
+        class="appleCitrus-chunk4"
+        src="images/appleCitrus-chunk4.png"
+        alt="appleCitrus-chunk4"
+      />
+    </div>
+    <div class="juice__chunk5 juice__chunk5-appleCitrus">
+      <img
+        class="appleCitrus-chunk5"
+        src="images/appleCitrus-chunk5.png"
+        alt="appleCitrus-chunk5"
+      />
+    </div>
+    <div class="bottom-sign">
+      <img src="images/bottom-sign.svg" alt="bottom-sign" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+          <div
+  class="swiper-slide swiper-slide--multiMix"
+  data-hash="multiMix"
+  data-history="multiMix"
+>
+  <div class="home-page home-page--multiMix">
+  <div class="juice">
+    <div class="play-btn" data-swiper-parallax="-50">
+      <img src="images/play-button.svg" alt="" />
+    </div>
+    <div class="juice__name juice__name-multiMix" data-swiper-parallax="-150">
+      <img
+        class="multiMix-text"
+        src="images/multiMix-text.svg"
+        alt="multiMix-text"
+        width="100%"
+      />
+    </div>
+    <div
+      class="juice__bottle juice__bottle-multiMix"
+      data-swiper-parallax="-100"
+    >
+      <img
+        class="multiMix-cardboard-bottle"
+        src="images/multiMix-cardboard-bottle.png"
+        alt="multiMix-cardboard-bottle"
+        width="100%"
+      />
+    </div>
+
+    <div class="juice__chunk1 juice__chunk1-multiMix">
+      <img
+        class="multiMix-chunk1"
+        src="images/multiMix-chunk1.png"
+        alt="multiMix-chunk1"
+      />
+    </div>
+    <div class="juice__chunk2 juice__chunk2-multiMix">
+      <img
+        class="multiMix-chunk2"
+        src="images/multiMix-chunk2.png"
+        alt="multiMix-chunk2"
+      />
+    </div>
+    <div class="juice__chunk3 juice__chunk3-multiMix">
+      <img
+        class="multiMix-chunk3"
+        src="images/multiMix-chunk3.png"
+        alt="multiMix-chunk3"
+      />
+    </div>
+    <div class="juice__chunk4 juice__chunk4-multiMix">
+      <img
+        class="multiMix-chunk4"
+        src="images/multiMix-chunk4.png"
+        alt="multiMix-chunk4"
+      />
+    </div>
+    <div class="bottom-sign">
+      <img src="images/bottom-sign.svg" alt="bottom-sign" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+        </div>
+      </div>
+      <div class="slider-container slider-container--fruits">
+        <div class="slider-track slider-track--fruits">
+          <div class="slider-slide">
+            <section class="apple">
+  <div class="content content--apple">
+    <div class="content__header">
+      <div class="juice-text2">
+        <img src="images/apple-text2.svg" alt="apple-text" />
+      </div>
+      <h2>100 % ՀՅՈՒԹ</h2>
+    </div>
+
+    <div class="content__inner content__inner--apple">
+      <div class="container">
+        <div class="sugar">
+          <div class="sugar-img">
+            <img src="images/sugar-icon.svg" alt="sugar-icon" />
+          </div>
+          <div class="sugar-text">
+            Առանց<br />
+            հավելյալ շաքարի
+          </div>
+        </div>
+        <div class="leaflet">
+          <div class="leaflet-img">
+            <img src="images/leaflet-icon.svg" alt="leaflet-icon" />
+          </div>
+          <div class="leaflet-text">
+            Առանց ներկանյութերի, կոնսերվանտների և ԳՄՕ-ի
+          </div>
+        </div>
+        <div class="antioxidant">
+          <div class="antioxidant-img">
+            <img src="images/antioxidant-icon.svg" alt="antioxidant-icon" />
+          </div>
+          <div class="antioxidant-text">
+            Պարունակում է միկրոտարրեր և հակաօքսիդիչներ
+          </div>
+        </div>
+        <div class="description description--apple">
+          <p>
+            Դոբրի «Խնձորը» պարունակում է խնձորի, կիտրոնի և այլ օրգանական
+            թթուներ, որոնք նպաստում են բնականոն մարսողությանը: Հյութը
+            պարունակում է նաև կալիում, որն անհրաժեշտ է սրտի աշխատանքի համար:
+          </p>
+
+          <p>
+            Գլյուկոզան և ֆրուկտոզան Դոբրի «Խնձորի» մեջ դարձնում են հյութն այնքան
+            համեղ և օգնում են հագենալ:
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="basic-composition">
+      <div class="bottle-sketch">
+        <img src="images/bottle-sketch.svg" alt="bottle-sketch" width="100%" />
+      </div>
+      <div class="basic-composition-text">
+        <h2>
+          1 լիտրը պարունակում է<br />
+          7,5 խնձոր
+        </h2>
+      </div>
+    </div>
+    <div class="sub-composition">
+      <div class="container">
+        <h2>Հյութի մեկ <br />բաժակում (250 մլ)</h2>
+        <p>% օրական միջին նորմայից</p>
+        <div class="elements">
+          <div class="elements__elem elements__elem--ferrum">
+            <p>9% &nbspերկաթ</p>
+          </div>
+
+          <div class="elements__elem elements__elem--kalium">
+            <p>39% &nbsp կալիում</p>
+          </div>
+
+          <div class="elements__elem elements__elem--magnesium">
+            <p>5% &nbsp մագնեզիում</p>
+          </div>
+        </div>
+      </div>
+      <div class="juice-glass juice-glass--apple">
+        <img src="images/taste-glass-apple.png" alt="glass-apple" />
+      </div>
+    </div>
+    <div class="content__fruitChunk content__fruitChunk--apple">
+      <img src="images/apple-chunk5.png" alt="" />
+    </div>
+  </div>
+  <div class="feedback-page feedback--apple">
+    <div class="damper"></div>
+<div class="feedback__text">
+  <img src="images/feedback2.svg" alt="feddback-text" />
+</div>
+<!-- will be dinamicly added -->
+<div class="form-container"></div>
+
+<div class="container">
+  <div class="contacts-feedback">
+    <div class="social">
+      <a href="https://facebook.com"
+        ><img src="images/facebook-icon.svg" alt="facebook-icon"
+      /></a>
+      <a href="https://youtube.com"
+        ><img src="images/youtube-icon.svg" alt="youtube-icon"
+      /></a>
+      <a href="https://instagram.com"
+        ><img src="images/instagram-icon.svg" alt="instagram-icon"
+      /></a>
+    </div>
+    <div>
+      <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+      <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="container">
+    <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+          </div>
+          <div class="slider-slide">
+            <section class="tomato">
+  <div class="content content--tomato">
+    <div class="content__header">
+      <div class="juice-text2">
+        <img src="images/tomato-text2.svg" alt="tomato-text" />
+      </div>
+      <h2>100 % ՀՅՈՒԹ</h2>
+    </div>
+
+    <div class="content__inner content__inner--tomato">
+      <div class="container">
+        <div class="sugar">
+          <div class="sugar-img">
+            <img src="images/sugar-icon.svg" alt="sugar-icon" />
+          </div>
+          <div class="sugar-text">
+            Առանց<br />
+            հավելյալ շաքարի
+          </div>
+        </div>
+        <div class="leaflet">
+          <div class="leaflet-img">
+            <img src="images/leaflet-icon.svg" alt="leaflet-icon" />
+          </div>
+          <div class="leaflet-text">
+            Առանց ներկանյութերի, կոնսերվանտների և ԳՄՕ-ի
+          </div>
+        </div>
+        <div class="antioxidant">
+          <div class="antioxidant-img">
+            <img src="images/antioxidant-icon.svg" alt="antioxidant-icon" />
+          </div>
+          <div class="antioxidant-text">
+            Պարունակում է միկրոտարրեր և հակաօքսիդիչներ
+          </div>
+        </div>
+        <div class="description description--tomato">
+          <p>
+            Դոբրի «Լոլիկը» պարունակում է մանրաթելեր, որոնք կարգավորում են
+            նյութափոխանակությունը և նպաստում սննդի ավելի լավ յուրացմանը:
+          </p>
+
+          <p>
+            Հյութը պարունակում է լիկոպին և վիտամին E, որոնց համադրությունը
+            պաշտպանում է մարմինը վաղաժամ ծերացումից: Լիկոպինը Դոբրի լոլիկի
+            հյութի մեջ ավելի ակտիվ է, քան լոլիկների մեջ, քանի որ մեխանիկական
+            մանրացման և ջերմային մշակման արդյունքում մեծանում է դրա
+            հասանելիությունը:
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="basic-composition">
+      <div class="bottle-sketch">
+        <img src="images/bottle-sketch.svg" alt="bottle-sketch" width="100%" />
+      </div>
+      <div class="basic-composition-text">
+        <h2>
+          1 լիտրը<br />
+          պարունակում է<br />
+          12 լոլիկ
+        </h2>
+      </div>
+    </div>
+    <div class="sub-composition">
+      <div class="container">
+        <h2>Հյութի մեկ <br />բաժակում (250 մլ)</h2>
+        <p>% օրական միջին նորմայից</p>
+        <div class="elements">
+          <div class="elements__elem elements__elem--fiber">
+            <p>Մանրաթելեր</p>
+          </div>
+
+          <div class="elements__elem elements__elem--kalium2">
+            <p>116% կալիում</p>
+          </div>
+
+          <div class="elements__elem elements__elem--vitamine">
+            <p>19% վիտամին Е</p>
+          </div>
+        </div>
+      </div>
+      <div class="juice-glass juice-glass--tomato">
+        <img src="images/taste-glass-tomato.png" alt="glass-tomato" />
+      </div>
+    </div>
+    <div class="content__fruitChunk content__fruitChunk--tomato">
+      <img src="images/tomato-chunk6.png" alt="tomato-chunk6" />
+    </div>
+  </div>
+  <div class="feedback-page feedback--tomato">
+    <div class="damper"></div>
+<div class="feedback__text">
+  <img src="images/feedback2.svg" alt="feddback-text" />
+</div>
+<!-- will be dinamicly added -->
+<div class="form-container"></div>
+
+<div class="container">
+  <div class="contacts-feedback">
+    <div class="social">
+      <a href="https://facebook.com"
+        ><img src="images/facebook-icon.svg" alt="facebook-icon"
+      /></a>
+      <a href="https://youtube.com"
+        ><img src="images/youtube-icon.svg" alt="youtube-icon"
+      /></a>
+      <a href="https://instagram.com"
+        ><img src="images/instagram-icon.svg" alt="instagram-icon"
+      /></a>
+    </div>
+    <div>
+      <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+      <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="container">
+    <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+          </div>
+          <div class="slider-slide">
+            <section class="appleCitrus">
+  <div class="content content--appleCitrus">
+    <div class="content__header">
+      <div class="juice-text2">
+        <img src="images/appleCitrus-text2.svg" alt="appleCitrus-text" />
+
+        <h2>100 % ՀՅՈՒԹ</h2>
+      </div>
+    </div>
+    <div class="content__inner content__inner--appleCitrus">
+      <div class="container">
+        <div class="sugar">
+          <div class="sugar-img">
+            <img src="images/sugar-icon.svg" alt="sugar-icon" />
+          </div>
+          <div class="sugar-text">
+            Առանց<br />
+            հավելյալ շաքարի
+          </div>
+        </div>
+        <div class="leaflet">
+          <div class="leaflet-img">
+            <img src="images/leaflet-icon.svg" alt="leaflet-icon" />
+          </div>
+          <div class="leaflet-text">
+            Առանց ներկանյութերի, կոնսերվանտների և ԳՄՕ-ի
+          </div>
+        </div>
+        <div class="antioxidant">
+          <div class="antioxidant-img">
+            <img src="images/antioxidant-icon.svg" alt="antioxidant-icon" />
+          </div>
+          <div class="antioxidant-text">
+            Պարունակում է միկրոտարրեր և հակաօքսիդիչներ
+          </div>
+        </div>
+        <div class="description description--appleCitrus">
+          <p>
+            «Խնձոր-ցիտրուսը» վիտամին С-ի աղբյուր է, հյութի 1 բաժակը պարունակում
+            է դրա * օրական միջին նորմայի 50% ** Վիտամին C-ի ամենօրյա ընդունումն
+            օգնում է նվազեցնել վիրուսային հիվանդությունների ձեռքբերման ռիսկը,
+            բարձրացնում է իմունիտետը և էներգիա հաղորդում:
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="basic-composition">
+      <div class="bottle-sketch">
+        <img src="images/bottle-sketch.svg" alt="bottle-sketch" width="100%" />
+      </div>
+      <div class="basic-composition-text">
+        <h2>
+          1 լիտրը պարունակում է <br />4 խնձոր, <br />4 նարինջ, <br />2 մանդարին,
+          կիտրոնի, լայմի <br />և թուրինջի որոշ չափաբաժին
+        </h2>
+      </div>
+    </div>
+    <div class="sub-composition">
+      <div class="container">
+        <h2>Հյութի մեկ <br />բաժակում (250 մլ)</h2>
+        <p>% օրական միջին նորմայից</p>
+        <div class="elements">
+          <div class="elements__elem elements__elem--vitaminc">
+            <p>43 % վիտամին С</p>
+          </div>
+
+          <div class="elements__elem elements__elem--antioxidant">
+            <p>Հակաօքսիդանտներ</p>
+          </div>
+
+          <div class="elements__elem elements__elem--pektin">
+            <p>Պեկտիններ</p>
+          </div>
+        </div>
+      </div>
+      <div class="juice-glass juice-glass--appleCitrus">
+        <img src="images/taste-glass-appleCitrus.png" alt="glass-appleCitrus" />
+      </div>
+    </div>
+    <div class="content__fruitChunk content__fruitChunk--appleCitrus">
+      <img src="images/appleCitrus-chunk6.png" alt="appleCitrus-chunk6" />
+    </div>
+  </div>
+  <div class="feedback-page feedback--appleCitrus">
+    <div class="damper"></div>
+<div class="feedback__text">
+  <img src="images/feedback2.svg" alt="feddback-text" />
+</div>
+<!-- will be dinamicly added -->
+<div class="form-container"></div>
+
+<div class="container">
+  <div class="contacts-feedback">
+    <div class="social">
+      <a href="https://facebook.com"
+        ><img src="images/facebook-icon.svg" alt="facebook-icon"
+      /></a>
+      <a href="https://youtube.com"
+        ><img src="images/youtube-icon.svg" alt="youtube-icon"
+      /></a>
+      <a href="https://instagram.com"
+        ><img src="images/instagram-icon.svg" alt="instagram-icon"
+      /></a>
+    </div>
+    <div>
+      <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+      <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="container">
+    <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+          </div>
+          <div class="slider-slide">
+            <section class="multiMix">
+  <div class="content content--multiMix">
+    <div class="content__header">
+      <div class="juice-text2">
+        <img src="images/multiMix-text2.svg" alt="multiMix-text" />
+      </div>
+      <h2>100 % ՀՅՈՒԹ</h2>
+    </div>
+
+    <div class="content__inner content__inner--multiMix">
+      <div class="container">
+        <div class="sugar">
+          <div class="sugar-img">
+            <img src="images/sugar-icon.svg" alt="sugar-icon" />
+          </div>
+          <div class="sugar-text">
+            Առանց<br />
+            հավելյալ շաքարի
+          </div>
+        </div>
+        <div class="leaflet">
+          <div class="leaflet-img">
+            <img src="images/leaflet-icon.svg" alt="leaflet-icon" />
+          </div>
+          <div class="leaflet-text">
+            Առանց ներկանյութերի, կոնսերվանտների և ԳՄՕ-ի
+          </div>
+        </div>
+        <div class="antioxidant">
+          <div class="antioxidant-img">
+            <img src="images/antioxidant-icon.svg" alt="antioxidant-icon" />
+          </div>
+          <div class="antioxidant-text">
+            Պարունակում է միկրոտարրեր և հակաօքսիդիչներ
+          </div>
+        </div>
+        <div class="description description--multiMix">
+          <p>
+            Դոբրի «Մուլտի միքսը» հարուստ է վիտամին С-ով, որն օգնում է նվազեցնել
+            վիրուսային հիվանդությունների ձեռքբերման ռիսկը, բարձրացնում է
+            իմունիտետը և էներգիա հաղորդում:
+          </p>
+          <p>
+            Դոբրի «Մուլտի միքս» հյութը հարուստ է նախավիտամին А-ով, որը
+            պատասխանատու է մաշկի առողջության համար՝ պահպանելով դրա
+            առաձգականությունը:
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="basic-composition">
+      <div class="bottle-sketch">
+        <img src="images/bottle-sketch.svg" alt="bottle-sketch" width="100%" />
+      </div>
+      <div class="basic-composition-text">
+        <h2>
+          1 լիտրը<br />
+          պարունակում է<br />
+          5 խնձոր, 2 նարինջ, դեղձի<br />
+          և գազարի որոշ<br />
+          չափաբաժին<br />
+        </h2>
+      </div>
+    </div>
+    <div class="sub-composition">
+      <div class="container">
+        <h2>Հյութի մեկ <br />բաժակում (250 մլ)</h2>
+        <p>% օրական միջին նորմայից</p>
+        <div class="elements">
+          <div class="elements__elem elements__elem--pektin-fiber">
+            <p>Պեկտիններ, մանրաթելեր</p>
+          </div>
+
+          <div class="elements__elem elements__elem--kalium3">
+            <p>18% կալիում</p>
+          </div>
+
+          <div class="elements__elem elements__elem--fruit-acid">
+            <p>Մրգային թթուներ</p>
+          </div>
+        </div>
+      </div>
+      <div class="juice-glass juice-glass--multiMix">
+        <img src="images/taste-glass-multiMix.png" alt="glass-multiMix" />
+      </div>
+    </div>
+    <div class="content__fruitChunk content__fruitChunk--multiMix">
+      <img src="images/multiMix-chunk6.png" alt="multiMix-chunk6" />
+    </div>
+  </div>
+  <div class="feedback-page feedback--multiMix">
+    <div class="damper"></div>
+<div class="feedback__text">
+  <img src="images/feedback2.svg" alt="feddback-text" />
+</div>
+<!-- will be dinamicly added -->
+<div class="form-container"></div>
+
+<div class="container">
+  <div class="contacts-feedback">
+    <div class="social">
+      <a href="https://facebook.com"
+        ><img src="images/facebook-icon.svg" alt="facebook-icon"
+      /></a>
+      <a href="https://youtube.com"
+        ><img src="images/youtube-icon.svg" alt="youtube-icon"
+      /></a>
+      <a href="https://instagram.com"
+        ><img src="images/instagram-icon.svg" alt="instagram-icon"
+      /></a>
+    </div>
+    <div>
+      <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+      <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="container">
+    <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="return-btn">
+        <img src="images/up-arrow.svg" alt="up-arrow" />
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index-exp.js"></script>
+  </body>
+</html>

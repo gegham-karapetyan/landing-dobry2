@@ -1,0 +1,265 @@
+.content {
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.content__header {
+  padding-left: 12%;
+}
+
+.content--apple {
+  background-color: #96b796;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #56bb7f8a), to(#56bb7f));
+  background-image: linear-gradient(#56bb7f8a 1%, #56bb7f);
+}
+
+.content--tomato {
+  background-color: #f5adff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f39070d4), to(#f39070));
+  background-image: linear-gradient(#f39070d4 1%, #f39070);
+}
+
+.content--appleCitrus {
+  background-color: #e0d356;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f39070d4), to(#f39070));
+  background-image: linear-gradient(#f39070d4 1%, #f39070);
+}
+
+.content--multiMix {
+  background: #afa74c;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f1bb23b5), to(#f1bb23));
+  background-image: linear-gradient(#f1bb23b5 1%, #f1bb23);
+}
+
+.content__inner {
+  width: 90%;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+}
+
+.content__inner.content__inner--apple {
+  background-image: url("../images/apple-content-bg.svg");
+}
+
+.content__inner.content__inner--tomato {
+  background-image: url("../images/tomato-content-bg.svg");
+}
+
+.content__inner.content__inner--appleCitrus {
+  background-image: url("../images/appleCitrus-content-bg.svg");
+}
+
+.content__inner.content__inner--multiMix {
+  background-image: url("../images/multiMix-content-bg.svg");
+}
+
+.content__fruitChunk {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.content__fruitChunk--apple {
+  top: 510px;
+}
+
+.content__fruitChunk--tomato {
+  top: 460px;
+}
+
+.content__fruitChunk--appleCitrus {
+  top: 470px;
+}
+
+.content__fruitChunk--multiMix {
+  top: 590px;
+}
+
+.juice-text2 {
+  width: 50%;
+}
+
+.juice-text2 > img {
+  width: 100%;
+}
+
+.sugar,
+.leaflet,
+.antioxidant {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 33px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sugar-img,
+.leaflet-img,
+.antioxidant-img {
+  margin-right: 22px;
+  margin-left: 5px;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.description--apple {
+  width: 215px;
+}
+
+.description--tomato {
+  width: 230px;
+}
+
+.description--appleCitrus {
+  width: 232px;
+}
+
+.description--multiMix {
+  width: 230px;
+}
+
+.basic-composition {
+  margin-top: 50px;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.basic-composition img {
+  width: 100%;
+}
+
+.basic-composition > div {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.sub-composition {
+  margin-top: 45px;
+  position: relative;
+}
+
+.juice-glass {
+  position: absolute;
+  right: 0;
+}
+
+.juice-glass--apple {
+  top: 10px;
+}
+
+.juice-glass--tomato {
+  top: 20px;
+}
+
+.juice-glass--appleCitrus {
+  top: 20px;
+}
+
+.juice-glass--multiMix {
+  top: 20px;
+}
+
+.elements {
+  font-weight: 700;
+  padding: 0;
+  margin-top: 21px;
+}
+
+.elements__elem > p {
+  margin: 0;
+}
+
+.elements__elem {
+  margin-top: 7px;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+  min-height: 38px;
+  background-repeat: no-repeat;
+}
+
+.elements__elem--ferrum {
+  color: #8bd2b8;
+  background-image: url("../images/ferrum-bg.png");
+}
+
+.elements__elem--kalium {
+  color: #8bd2b8;
+  background-image: url("../images/kalium-bg.png");
+}
+
+.elements__elem--magnesium {
+  color: #8bd2b8;
+  background-image: url("../images/magnesium-bg.png");
+}
+
+.elements__elem--fiber {
+  color: #e7524c;
+  background-image: url("../images/fiber-bg.png");
+}
+
+.elements__elem--kalium2 {
+  color: #e7524c;
+  background-image: url("../images/kalium2-bg.png");
+}
+
+.elements__elem--vitamine {
+  color: #e7524c;
+  background-image: url("../images/vitamine-bg.png");
+}
+
+.elements__elem--vitaminc {
+  color: #e7524c;
+  background-image: url("../images/vitaminc-bg.png");
+}
+
+.elements__elem--antioxidant {
+  color: #e7524c;
+  background-image: url("../images/antioxidant-bg.png");
+}
+
+.elements__elem--pektin {
+  color: #e7524c;
+  background-image: url("../images/pektin-bg.png");
+}
+
+.elements__elem--pektin-fiber {
+  color: #f6cd5b;
+  background-image: url("../images/pektin-fiber-bg.png");
+}
+
+.elements__elem--kalium3 {
+  color: #f6cd5b;
+  background-image: url("../images/kalium3-bg.png");
+}
+
+.elements__elem--fruit-acid {
+  color: #f6cd5b;
+  background-image: url("../images/fruit-acid-bg.png");
+}
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,63 @@
+.about-us {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 568px;
+  z-index: -1;
+}
+
+.first-part {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 55%;
+}
+.bottles {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
+  left: 0;
+}
+.left-part {
+  flex: 50%;
+  height: 100%;
+  background-color: #fa7d3c;
+}
+.right-part {
+  flex: 50%;
+  height: 100%;
+}
+.right-part > div:first-child {
+  width: 100%;
+  height: 50%;
+  background-color: #8bd2b8;
+}
+.right-part > div:last-child {
+  width: 100%;
+  height: 50%;
+  background-color: #e7524c;
+}
+
+.second-part {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  background-color: #f1bb23;
+  line-height: 2rem;
+  & > about-us-text {
+    margin-bottom: 20px;
+  }
+}
+
+.about-us--active {
+  z-index: 4;
+}

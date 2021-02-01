@@ -1,0 +1,211 @@
+@import "./variables.scss";
+
+.content {
+  position: relative;
+  width: 100%;
+
+  overflow-y: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &__header {
+    padding-left: 12%;
+  }
+  &--apple {
+    //background: $blurry-apple;
+    background-color: #96b796;
+    background-image: linear-gradient(#56bb7f8a 1%, #56bb7f);
+  }
+  &--tomato {
+    //background: $blurry-tomato;
+    background-color: #f5adff;
+    background-image: linear-gradient(#f39070d4 1%, #f39070);
+  }
+  &--appleCitrus {
+    //background: $blurry-appleCitrus;
+    background-color: #e0d356;
+    background-image: linear-gradient(#f39070d4 1%, #f39070);
+  }
+  &--multiMix {
+    //background: $blurry-multiMix;
+    background: #afa74c;
+    background-image: linear-gradient(#f1bb23b5 1%, #f1bb23);
+  }
+
+  &__inner {
+    width: 90%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+    background-size: cover;
+    &.content__inner--apple {
+      background-image: url("../images/apple-content-bg.svg");
+    }
+    &.content__inner--tomato {
+      background-image: url("../images/tomato-content-bg.svg");
+    }
+    &.content__inner--appleCitrus {
+      background-image: url("../images/appleCitrus-content-bg.svg");
+    }
+    &.content__inner--multiMix {
+      background-image: url("../images/multiMix-content-bg.svg");
+    }
+  }
+
+  &__fruitChunk {
+    display: block;
+    position: absolute;
+    right: 0;
+    &--apple {
+      top: 510px;
+    }
+    &--tomato {
+      top: 460px;
+    }
+    &--appleCitrus {
+      top: 470px;
+    }
+    &--multiMix {
+      top: 590px;
+    }
+  }
+}
+.juice-text2 {
+  width: 50%;
+  & > img {
+    width: 100%;
+  }
+}
+.sugar,
+.leaflet,
+.antioxidant {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding-top: 33px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sugar-img,
+.leaflet-img,
+.antioxidant-img {
+  margin-right: 22px;
+  margin-left: 5px;
+}
+.description {
+  margin-top: 40px;
+}
+.description--apple {
+  width: 215px;
+}
+.description--tomato {
+  width: 230px;
+}
+.description--appleCitrus {
+  width: 232px;
+}
+.description--multiMix {
+  width: 230px;
+}
+.basic-composition {
+  margin-top: 50px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  & img {
+    width: 100%;
+  }
+  & > div {
+    flex: 50%;
+  }
+}
+.sub-composition {
+  margin-top: 45px;
+  position: relative;
+}
+.juice-glass {
+  position: absolute;
+  right: 0;
+
+  &--apple {
+    top: 10px;
+  }
+  &--tomato {
+    top: 20px;
+  }
+  &--appleCitrus {
+    top: 20px;
+  }
+  &--multiMix {
+    top: 20px;
+  }
+}
+
+.elements {
+  font-weight: 700;
+  padding: 0;
+  margin-top: 21px;
+
+  &__elem > p {
+    margin: 0;
+  }
+  &__elem {
+    margin-top: 7px;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+    min-height: 38px;
+    background-repeat: no-repeat;
+  }
+  &__elem--ferrum {
+    color: #8bd2b8;
+    background-image: url("../images/ferrum-bg.png");
+  }
+  &__elem--kalium {
+    color: #8bd2b8;
+    background-image: url("../images/kalium-bg.png");
+  }
+  &__elem--magnesium {
+    color: #8bd2b8;
+    background-image: url("../images/magnesium-bg.png");
+  }
+  &__elem--fiber {
+    color: #e7524c;
+    background-image: url("../images/fiber-bg.png");
+  }
+  &__elem--kalium2 {
+    color: #e7524c;
+    background-image: url("../images/kalium2-bg.png");
+  }
+  &__elem--vitamine {
+    color: #e7524c;
+    background-image: url("../images/vitamine-bg.png");
+  }
+  &__elem--vitaminc {
+    color: #e7524c;
+    background-image: url("../images/vitaminc-bg.png");
+  }
+  &__elem--antioxidant {
+    color: #e7524c;
+    background-image: url("../images/antioxidant-bg.png");
+  }
+  &__elem--pektin {
+    color: #e7524c;
+    background-image: url("../images/pektin-bg.png");
+  }
+  &__elem--pektin-fiber {
+    color: #f6cd5b;
+    background-image: url("../images/pektin-fiber-bg.png");
+  }
+  &__elem--kalium3 {
+    color: #f6cd5b;
+    background-image: url("../images/kalium3-bg.png");
+  }
+  &__elem--fruit-acid {
+    color: #f6cd5b;
+    background-image: url("../images/fruit-acid-bg.png");
+  }
+}

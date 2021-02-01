@@ -1,0 +1,175 @@
+.home {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  min-height: 568px;
+  width: 100%;
+}
+
+.home--apple {
+  background-color: #8bd2b8ba;
+}
+
+.home--tomato {
+  background-color: #e7524ccf;
+}
+
+.home--appleCitrus {
+  background-color: #fa7d3cdb;
+}
+
+.home--multiMix {
+  background-color: #feca57cc;
+}
+
+.home .juice > div {
+  position: absolute;
+  overflow: hidden;
+}
+
+.play-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 271px;
+  left: 39px;
+  z-index: 5;
+}
+
+.bottom-sign {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.juice__bottle {
+  width: 76%;
+  max-width: 320px;
+  height: auto;
+  left: 24%;
+  top: 167px;
+}
+
+.juice__name-apple {
+  width: 71%;
+  height: auto;
+  max-width: 300px;
+  left: 11%;
+  top: 157px;
+}
+
+.juice__chunk1-apple {
+  right: 0;
+  top: 87px;
+}
+
+.juice__chunk2-apple {
+  left: 0;
+  top: 155px;
+}
+
+.juice__chunk3-apple {
+  right: 0px;
+  top: 370px;
+}
+
+.juice__chunk4-apple {
+  left: 0px;
+  top: 360px;
+}
+
+.juice__name-tomato {
+  width: 65%;
+  height: auto;
+  max-width: 300px;
+  left: 11%;
+  top: 157px;
+}
+
+.juice__chunk1-tomato {
+  left: 0;
+  top: 127px;
+}
+
+.juice__chunk2-tomato {
+  right: 0;
+  top: 127px;
+}
+
+.juice__chunk3-tomato {
+  right: 0px;
+  top: 300px;
+}
+
+.juice__chunk4-tomato {
+  left: 0px;
+  top: 322px;
+}
+
+.juice__name-appleCitrus {
+  width: 72%;
+  height: auto;
+  max-width: 300px;
+  left: 11%;
+  top: 129px;
+}
+
+.juice__chunk1-appleCitrus {
+  left: 0;
+  top: 80px;
+}
+
+.juice__chunk2-appleCitrus {
+  right: 0;
+  top: 97px;
+}
+
+.juice__chunk3-appleCitrus {
+  right: 0px;
+  top: 237px;
+}
+
+.juice__chunk4-appleCitrus {
+  left: 0px;
+  top: 273px;
+}
+
+.juice__chunk5-appleCitrus {
+  left: 28px;
+  top: 395px;
+}
+
+.juice__name-multiMix {
+  width: 61%;
+  height: auto;
+  max-width: 300px;
+  left: 12%;
+  top: 129px;
+}
+
+.juice__chunk1-multiMix {
+  left: 0;
+  top: 115px;
+}
+
+.juice__chunk2-multiMix {
+  right: 0;
+  top: 50px;
+}
+
+.juice__chunk3-multiMix {
+  right: 0px;
+  top: 257px;
+}
+
+.juice__chunk4-multiMix {
+  left: 0px;
+  top: 356px;
+}
+
+.juice__chunk5-multiMix {
+  left: 28px;
+  top: 395px;
+}
+/*# sourceMappingURL=home.css.map */

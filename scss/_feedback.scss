@@ -1,0 +1,110 @@
+@import "./variables.scss";
+
+.feedback--apple {
+  background: $dark-apple;
+  & input,
+  & textarea {
+    color: $blurry-apple;
+  }
+  & .copyright {
+    background-color: $blurry-apple;
+  }
+}
+.feedback--tomato {
+  background: $dark-tomato;
+  & input,
+  & textarea {
+    color: $blurry-tomato;
+  }
+  & .copyright {
+    background-color: $blurry-tomato;
+  }
+}
+.feedback--appleCitrus {
+  background: $dark-appleCitrus;
+  & input,
+  & textarea {
+    color: $blurry-appleCitrus;
+  }
+  & .copyright {
+    background-color: $blurry-appleCitrus;
+  }
+}
+.feedback--multiMix {
+  background: $dark-multiMix;
+  & input,
+  & textarea {
+    color: $blurry-multiMix;
+  }
+  & .copyright {
+    background-color: $blurry-multiMix;
+  }
+}
+
+.feedback-page {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  //justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  min-height: 568px;
+}
+
+.menu-page .feedback-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feedback__text {
+  text-align: center;
+}
+
+.form-container {
+  width: 83%;
+  flex: 40%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0;
+}
+
+.contacts-feedback {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  & .social img {
+    width: 100%;
+  }
+  & .social > a {
+    display: inline-block;
+    width: 28px;
+    margin-right: 17px;
+  }
+  & > div:last-child {
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.feedback__border {
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 100%;
+}
+
+.copyright {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  min-height: 60px;
+  padding-top: 10px;
+}
+
+//--------------experimental----------------
