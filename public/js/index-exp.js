@@ -155,10 +155,10 @@ function init() {
   changeReturnBtnBgColor();
   swiper.on("slideChange",  () =>{
        Promise.resolve(
-            sliderTrackFruitsTranslate();
-            changeMenuPageColor();
-            addFormToSection();
-            changeReturnBtnBgColor();
+            sliderTrackFruitsTranslate(),
+            changeMenuPageColor(),
+            addFormToSection(),
+            changeReturnBtnBgColor(),
         )
   });
 }
