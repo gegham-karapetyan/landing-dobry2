@@ -124,7 +124,7 @@ function sliderTrackFruitsTranslate() {
 //-----</ swiper slideChange event listeners >---------------
 
 function toggleSlideChanges() {
-  if (window.scrollY > 5) swiper.allowTouchMove = false;
+  if (window.scrollY > 10) swiper.allowTouchMove = false;
   else swiper.allowTouchMove = true;
 }
 
@@ -153,11 +153,13 @@ function init() {
   changeMenuPageColor();
   addFormToSection();
   changeReturnBtnBgColor();
-  swiper.on("slideChange", () => {
-    sliderTrackFruitsTranslate();
-    changeMenuPageColor();
-    addFormToSection();
-    changeReturnBtnBgColor();
+  swiper.on("slideChange",  () =>{
+       Promise.resolve(
+            sliderTrackFruitsTranslate();
+            changeMenuPageColor();
+            addFormToSection();
+            changeReturnBtnBgColor();
+        )
   });
 }
 
