@@ -175,7 +175,7 @@ function addFormToMenuPage() {
 }
 
 window.addEventListener("load", init, false);
-window.addEventListener("resize", init, false);
+//window.addEventListener("resize", init, false);
 window.addEventListener(
   "scroll",
   () => {
