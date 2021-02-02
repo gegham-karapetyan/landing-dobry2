@@ -3,6 +3,43 @@ let swiper = new Swiper(".swiper-container", {
   parallax: true,
 });
 
+//for testing temporary
+function info() {
+  const el = (sel) => document.createElement(sel);
+  let infoBlock = el("div");
+  infoBlock.style.position = "fixed";
+  infoBlock.style.top = "100px";
+  infoBlock.style.left = "100px";
+  infoBlock.style.zIndex = 99999;
+  infoBlock.style.background = "lightgray";
+
+  let pageYOffset = el("h2");
+  pageYOffset.innerHTML = `pageYOffset : ${window.pageYOffset}`;
+
+  let innerHeight = el("h2");
+  innerHeight.innerHTML = `innerHeight : ${window.innerHeight}`;
+
+  let outerHeight = el("h2");
+  outerHeight.innerHTML = `outerHeight : ${window.outerHeight}`;
+
+  let screenHeight = el("h2");
+  screenHeight.innerHTML = `screenHeight : ${window.screen.height}`;
+
+  let visualViewport = el("h2");
+  visualViewport.innerHTML = `visualViewport : ${window.visualViewport.height}`;
+
+  infoBlock.append(
+    pageYOffset,
+    innerHeight,
+    outerHeight,
+    screenHeight,
+    visualViewport
+  );
+  document.body.append(infoBlock);
+}
+info();
+//----------------------
+
 const body = document.querySelector("body");
 const form = document.querySelector("#form");
 const formSliderTrack = document.querySelector("form .slider-track");
