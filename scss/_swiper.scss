@@ -1,12 +1,12 @@
 .swiper-container {
   width: 100%;
-  //will be changed to a var
-  height: 100vh;
+  height: var(--innerHeight);
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
   z-index: 1;
+  background-color: $apple;
   transition: background-color 2s ease;
 }
 .swiper-wrapper {

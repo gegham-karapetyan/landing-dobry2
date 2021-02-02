@@ -19,3 +19,13 @@
 .prevent-scrolling {
   overflow: hidden;
 }
+
+.test {
+  position: fixed;
+  z-index: 444444;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: var(--innerHeight);
+  background-color: violet;
+}
