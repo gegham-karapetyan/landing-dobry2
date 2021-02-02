@@ -38,6 +38,7 @@ function info() {
   document.body.append(infoBlock);
 }
 info();
+window.addEventListener("resize", info);
 //----------------------
 
 const body = document.querySelector("body");
