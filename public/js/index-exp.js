@@ -4,55 +4,55 @@ let swiper = new Swiper(".swiper-container", {
 });
 
 //for testing temporary
-function info() {
-  let homePage = document.querySelector(".home-page");
-  let HPclientHeight = homePage.clientHeight;
-  let HPoffsetHeight = homePage.offsetHeight;
-  const el = (sel) => document.createElement(sel);
+// function info() {
+//   let homePage = document.querySelector(".home-page");
+//   let HPclientHeight = homePage.clientHeight;
+//   let HPoffsetHeight = homePage.offsetHeight;
+//   const el = (sel) => document.createElement(sel);
 
-  let d = el("div");
-  d.style.height = "100vh";
-  document.body.append(d);
-  console.log(d.offsetHeight);
-  d.remove();
+//   let d = el("div");
+//   d.style.height = "100vh";
+//   document.body.append(d);
+//   console.log(d.offsetHeight);
+//   d.remove();
 
-  let infoBlock = el("div");
-  infoBlock.style.position = "fixed";
-  infoBlock.style.top = "100px";
-  infoBlock.style.left = "100px";
-  infoBlock.style.zIndex = 99999;
-  infoBlock.style.background = "lightgray";
+//   let infoBlock = el("div");
+//   infoBlock.style.position = "fixed";
+//   infoBlock.style.top = "100px";
+//   infoBlock.style.left = "100px";
+//   infoBlock.style.zIndex = 99999;
+//   infoBlock.style.background = "lightgray";
 
-  let pageYOffset = el("h2");
-  pageYOffset.innerHTML = `pageYOffset : ${window.pageYOffset}`;
+//   let pageYOffset = el("h2");
+//   pageYOffset.innerHTML = `pageYOffset : ${window.pageYOffset}`;
 
-  let innerHeight = el("h2");
-  innerHeight.innerHTML = `innerHeight : ${window.innerHeight}`;
+//   let innerHeight = el("h2");
+//   innerHeight.innerHTML = `innerHeight : ${window.innerHeight}`;
 
-  let outerHeight = el("h2");
-  outerHeight.innerHTML = `outerHeight : ${window.outerHeight}`;
+//   let outerHeight = el("h2");
+//   outerHeight.innerHTML = `outerHeight : ${window.outerHeight}`;
 
-  let screenHeight = el("h2");
-  screenHeight.innerHTML = `screenHeight : ${window.screen.height}`;
+//   let screenHeight = el("h2");
+//   screenHeight.innerHTML = `screenHeight : ${window.screen.height}`;
 
-  let visualViewport = el("h2");
-  visualViewport.innerHTML = `visualViewport : ${window.visualViewport.height}`;
+//   let visualViewport = el("h2");
+//   visualViewport.innerHTML = `visualViewport : ${window.visualViewport.height}`;
 
-  let HP = el("h2");
-  HP.innerHTML = `<br>clientHeight : ${HPclientHeight} <br>offsetHeight : ${HPoffsetHeight}`;
+//   let HP = el("h2");
+//   HP.innerHTML = `<br>clientHeight : ${HPclientHeight} <br>offsetHeight : ${HPoffsetHeight}`;
 
-  infoBlock.append(
-    pageYOffset,
-    innerHeight,
-    outerHeight,
-    screenHeight,
-    visualViewport,
-    HP
-  );
-  document.body.append(infoBlock);
-}
-info();
-window.addEventListener("resize", info);
+//   infoBlock.append(
+//     pageYOffset,
+//     innerHeight,
+//     outerHeight,
+//     screenHeight,
+//     visualViewport,
+//     HP
+//   );
+//   document.body.append(infoBlock);
+// }
+// info();
+// window.addEventListener("resize", info);
 //----------------------
 
 const body = document.querySelector("body");
