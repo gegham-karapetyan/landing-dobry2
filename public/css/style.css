@@ -466,10 +466,8 @@ form .slider-track {
   top: 0;
   height: var(--viewHeight);
   width: 100%;
-  -webkit-transition: -webkit-transform 0.6s ease-in;
-  transition: -webkit-transform 0.6s ease-in;
-  transition: transform 0.6s ease-in;
-  transition: transform 0.6s ease-in, -webkit-transform 0.6s ease-in;
+  -webkit-transition: left 0.6s ease-in;
+  transition: left 0.6s ease-in;
 }
 
 .menu-page__wrapper {
@@ -578,8 +576,7 @@ form .slider-track {
 }
 
 .menu-page--active {
-  -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
+  left: 0;
 }
 
 .menu-page__part-top--active {
