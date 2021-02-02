@@ -5,6 +5,9 @@ let swiper = new Swiper(".swiper-container", {
 
 //for testing temporary
 function info() {
+  let homePage = document.querySelector(".home-page");
+  let HPclientHeight = homePage.clientHeight;
+  let HPoffsetHeight = homePage.offsetHeight;
   const el = (sel) => document.createElement(sel);
   let infoBlock = el("div");
   infoBlock.style.position = "fixed";
@@ -28,12 +31,16 @@ function info() {
   let visualViewport = el("h2");
   visualViewport.innerHTML = `visualViewport : ${window.visualViewport.height}`;
 
+  let HP = el("h2");
+  HP.innerHTML = `<br>clientHeight : ${HPclientHeight} <br>offsetHeight : ${HPoffsetHeight}`;
+
   infoBlock.append(
     pageYOffset,
     innerHeight,
     outerHeight,
     screenHeight,
-    visualViewport
+    visualViewport,
+    HP
   );
   document.body.append(infoBlock);
 }
