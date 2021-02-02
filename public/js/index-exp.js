@@ -1,9 +1,5 @@
 let swiper = new Swiper(".swiper-container", {
-  effect: "coverflow",
-  hashNavigation: true,
-  history: {
-   replaceState: true,
-  },
+  effect: "slide",
   parallax: true,
 });
 
@@ -37,13 +33,6 @@ const sections = {
   1: document.querySelector(".tomato"),
   2: document.querySelector(".appleCitrus"),
   3: document.querySelector(".multiMix"),
-};
-
-const returnBtnBgColors = {
-  0: "#3faa3f69",
-  1: "#e7524c8c",
-  2: "#fa7d3c9c",
-  3: "#feca57a1",
 };
 
 let homePageHeight;
@@ -123,21 +112,18 @@ function sliderTrackFruitsTranslate() {
 
 //-----</ swiper slideChange event listeners >---------------
 
-function toggleSlideChanges() {
+function preventSlideChanges() {
   if (window.scrollY > 30) swiper.allowTouchMove = false;
   else swiper.allowTouchMove = true;
 }
 
 function toggleReturnBtnActivity() {
-  if (window.scrollY > homePageHeight)
-    returnBtn.classList.add("return-btn--active");
-  else returnBtn.classList.remove("return-btn--active");
+  let index = swiper.activeIndex;
+  let className = `return-btn--${classes[index]}`;
+  if (window.scrollY > homePageHeight) returnBtn.classList.add(className);
+  else returnBtn.classList.remove(className);
 }
 
-function changeReturnBtnBgColor() {
-  let index = swiper.activeIndex;
-  returnBtn.style.backgroundColor = returnBtnBgColors[index];
-}
 //---------------< initialize onClick events handlers >-----------------
 burgerBtn.onclick = burgerBtnHandler;
 aboutUsBtn.onclick = aboutUsBtnHandler;
@@ -152,14 +138,13 @@ function init() {
   sliderTrackFruitsTranslate();
   changeMenuPageColor();
   addFormToSection();
-  changeReturnBtnBgColor();
-  swiper.on("slideChange",  () =>{
-       Promise.resolve(
-            sliderTrackFruitsTranslate(),
-            changeMenuPageColor(),
-            addFormToSection(),
-            changeReturnBtnBgColor(),
-        )
+
+  swiper.on("slideChange", () => {
+    Promise.resolve(
+      sliderTrackFruitsTranslate(),
+      changeMenuPageColor(),
+      addFormToSection()
+    );
   });
 }
 
@@ -179,7 +164,7 @@ window.addEventListener("load", init, false);
 window.addEventListener(
   "scroll",
   () => {
-    toggleSlideChanges();
+    preventSlideChanges();
     toggleReturnBtnActivity();
   },
   false

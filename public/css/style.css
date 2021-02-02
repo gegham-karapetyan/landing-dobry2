@@ -666,19 +666,19 @@ form .slider-track {
 }
 
 .home-page--apple {
-  background-color: #8bd2b8ba;
+  background-color: #8bd2b8;
 }
 
 .home-page--tomato {
-  background-color: #e7524ccf;
+  background-color: #e7524c;
 }
 
 .home-page--appleCitrus {
-  background-color: #fa7d3cdb;
+  background-color: #fa7d3c;
 }
 
 .home-page--multiMix {
-  background-color: #feca57cc;
+  background-color: #feca57;
 }
 
 .home-page .juice > div {
@@ -844,27 +844,19 @@ form .slider-track {
 }
 
 .content--apple {
-  background-color: #96b796;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #56bb7f8a), to(#56bb7f));
-  background-image: linear-gradient(#56bb7f8a 1%, #56bb7f);
+  background: #56bb7f;
 }
 
 .content--tomato {
-  background-color: #f5adff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f39070d4), to(#f39070));
-  background-image: linear-gradient(#f39070d4 1%, #f39070);
+  background: #f39070;
 }
 
 .content--appleCitrus {
-  background-color: #e0d356;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f39070d4), to(#f39070));
-  background-image: linear-gradient(#f39070d4 1%, #f39070);
+  background: #f29768;
 }
 
 .content--multiMix {
-  background: #afa74c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f1bb23b5), to(#f1bb23));
-  background-image: linear-gradient(#f1bb23b5 1%, #f1bb23);
+  background: #f1bb23;
 }
 
 .content__inner {
@@ -1367,45 +1359,36 @@ form .slider-track--translate {
 }
 
 .return-btn {
+  display: none;
   position: fixed;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transform: skewX(0deg) scale(0.5);
-          transform: skewX(0deg) scale(0.5);
-  background-image: linear-gradient(135deg, #ffffffba 10%, transparent 50%);
   cursor: pointer;
-  display: block;
   z-index: 100;
-  top: -50px;
+  bottom: 10px;
   right: 3%;
   text-align: center;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-}
-
-.return-btn--active {
-  -webkit-transform: skewX(5deg) scale(1);
-          transform: skewX(5deg) scale(1);
-  top: calc(100vh - 50px);
 }
 
 .return-btn--apple {
-  background-color: #3faa3f69;
+  display: block;
+  background-color: #56bb7f;
 }
 
 .return-btn--appleCitrus {
-  background-color: #fa7d3c9c;
+  display: block;
+  background-color: #f29768;
 }
 
 .return-btn--tomato {
-  background-color: #e7524c8c;
+  display: block;
+  background-color: #f39070;
 }
 
 .return-btn--multiMix {
-  background-color: #feca57a1;
+  display: block;
+  background-color: #f1bb23;
 }
 
 .damper {
@@ -1416,16 +1399,5 @@ form .slider-track--translate {
 
 .prevent-scrolling {
   overflow: hidden;
-}
-
-.parallax-bg {
-  position: absolute;
-  left: -100px;
-  top: 0;
-  width: 200%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: repeating-linear-gradient(-45deg, white 8%, #576769 32%);
 }
 /*# sourceMappingURL=style.css.map */

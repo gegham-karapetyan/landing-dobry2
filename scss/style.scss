@@ -18,19 +18,3 @@
 .prevent-scrolling {
   overflow: hidden;
 }
-
-.parallax-bg {
-  position: absolute;
-  left: -100px;
-  top: 0;
-  width: 200%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    white 8%,
-    rgb(87, 103, 105) 32%
-  );
-}

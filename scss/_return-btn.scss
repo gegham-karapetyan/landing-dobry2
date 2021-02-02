@@ -1,34 +1,29 @@
 .return-btn {
+  display: none;
   position: fixed;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-  transform: skewX(0deg) scale(0.5);
-  background-image: linear-gradient(135deg, #ffffffba 10%, transparent 50%);
   cursor: pointer;
-  display: block;
   z-index: 100;
-  top: -50px;
+  bottom: 10px;
   right: 3%;
   text-align: center;
-  transition: all 0.5s ease-in;
-
-  &--active {
-    transform: skewX(5deg) scale(1);
-    top: calc(100vh - 50px);
-  }
 
   &--apple {
-    background-color: #3faa3f69;
+    display: block;
+    background-color: $blurry-apple;
   }
   &--appleCitrus {
-    background-color: #fa7d3c9c;
+    display: block;
+    background-color: $blurry-appleCitrus;
   }
   &--tomato {
-    background-color: #e7524c8c;
+    display: block;
+    background-color: $blurry-tomato;
   }
   &--multiMix {
-    background-color: #feca57a1;
+    display: block;
+    background-color: $blurry-multiMix;
   }
 }

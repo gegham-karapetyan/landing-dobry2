@@ -8,19 +8,19 @@
   width: 100%;
 
   &--apple {
-    background-color: #8bd2b8ba;
+    background-color: $apple;
     //background-color: transparent;
   }
   &--tomato {
-    background-color: #e7524ccf;
+    background-color: $tomato;
     //background-color: transparent;
   }
   &--appleCitrus {
-    background-color: #fa7d3cdb;
+    background-color: $appleCitrus;
     //background-color: transparent;
   }
   &--multiMix {
-    background-color: #feca57cc;
+    background-color: $multiMix;
     //background-color: transparent;
   }
 }
