@@ -250,6 +250,48 @@ h2 {
   margin: auto;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
 .burger {
   outline: none;
   cursor: pointer;
@@ -666,19 +708,19 @@ form .slider-track {
 }
 
 .home-page--apple {
-  background-color: #8bd2b8;
+  background-color: transparent;
 }
 
 .home-page--tomato {
-  background-color: #e7524c;
+  background-color: transparent;
 }
 
 .home-page--appleCitrus {
-  background-color: #fa7d3c;
+  background-color: transparent;
 }
 
 .home-page--multiMix {
-  background-color: #feca57;
+  background-color: transparent;
 }
 
 .home-page .juice > div {

@@ -9,6 +9,13 @@ function info() {
   let HPclientHeight = homePage.clientHeight;
   let HPoffsetHeight = homePage.offsetHeight;
   const el = (sel) => document.createElement(sel);
+
+  let d = el("div");
+  d.style.height = "100vh";
+  document.body.append(d);
+  console.log(d.offsetHeight);
+  d.remove();
+
   let infoBlock = el("div");
   infoBlock.style.position = "fixed";
   infoBlock.style.top = "100px";
@@ -49,6 +56,7 @@ window.addEventListener("resize", info);
 //----------------------
 
 const body = document.querySelector("body");
+const swiperContainer = document.querySelector(".swiper-container");
 const form = document.querySelector("#form");
 const formSliderTrack = document.querySelector("form .slider-track");
 const formNextBtn = document.querySelector(".form__next-btn");
@@ -72,6 +80,13 @@ const classes = {
   1: "tomato",
   2: "appleCitrus",
   3: "multiMix",
+};
+
+const colors = {
+  0: "#8bd2b8",
+  1: "#e7524c",
+  2: "#fa7d3c",
+  3: "#feca57",
 };
 const sections = {
   0: document.querySelector(".apple"),
@@ -149,6 +164,11 @@ function changeMenuPageColor() {
   menuFeedbackPage.classList.add(`feedback--${classes[activeIndex]}`);
 }
 
+function changeSwiperContainerBg() {
+  let index = swiper.activeIndex;
+  swiperContainer.style.backgroundColor = colors[index];
+}
+
 function sliderTrackFruitsTranslate() {
   let index = swiper.activeIndex;
   sliderTrackFruits.style.transform = `translate3d(${-index * 100 + "%"},0,0)`;
@@ -183,12 +203,13 @@ function init() {
   sliderTrackFruitsTranslate();
   changeMenuPageColor();
   addFormToSection();
-
+  changeSwiperContainerBg();
   swiper.on("slideChange", () => {
     Promise.resolve(
       sliderTrackFruitsTranslate(),
       changeMenuPageColor(),
-      addFormToSection()
+      addFormToSection(),
+      changeSwiperContainerBg()
     );
   });
 }

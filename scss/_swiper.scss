@@ -1,11 +1,13 @@
 .swiper-container {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  //will be changed to a var
+  height: 100vh;
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
   z-index: 1;
+  transition: background-color 1s ease;
 }
 .swiper-wrapper {
   position: relative;
