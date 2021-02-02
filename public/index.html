@@ -28,14 +28,9 @@
         return vh;
       }
 
-      document.documentElement.style.setProperty(
-        "--innerHeight",
-        getInnerHeight() + "px"
-      );
-      document.documentElement.style.setProperty(
-        "--viewHeight",
-        getViewHeight() + "px"
-      );
+      root.style.setProperty("--innerHeight", getInnerHeight() + "px");
+      root.style.setProperty("--viewHeight", getViewHeight() + "px");
+      root.style.setProperty("--minusViewHeight", "-" + getViewHeight() + "px");
     </script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Dobry</title>
