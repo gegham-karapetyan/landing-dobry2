@@ -1193,7 +1193,7 @@ form .slider-track {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 100%;
-  height: 100vh;
+  height: var(--viewHeight);
   min-height: 568px;
 }
 

@@ -15,15 +15,16 @@
     /> -->
 
     <script>
-      const rootStyle = document.documentElement.style;
+      const root = document.documentElement;
+
       function getInnerHeight() {
         return window.innerHeight;
       }
       function getViewHeight() {
         let vh;
-        rootStyle.height = "100vh";
-        vh = rootStyle.offsetHeight;
-        rootStyle.height = "";
+        root.style.height = "100vh";
+        vh = root.offsetHeight;
+        root.style.height = "";
         return vh;
       }
 
